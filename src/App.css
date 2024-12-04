@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: rgb(36, 56, 136);
+    margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Fone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.All {
+    background-color: white;
+    width: 50%;
+    height: 600px;
+    margin: 100px auto;
+    border-radius: 7px;
 }
+.input-plan {
+    margin-left: 50px ;
+    margin-top: 30px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 2px solid rgb(48, 72, 168) ;
+    padding-left: 10px;
+    padding-right: 420px;
 
-.App-link {
-  color: #61dafb;
+    
 }
+.input-plan::placeholder {
+    
+    font-family:'Times New Roman', Times, serif ;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.input-plan:hover {
+    border: 3px 
+    solid rgb(48, 72, 168) ;
+}
+.add-button {
+    border-radius: 5px;
+    border: 2px solid rgb(41, 61, 140);
+    background-color: rgb(48, 72, 168);
+    padding: 15px 40px;
+    margin-left: 30px;
+    color: white;
+    
+}
+.delete-logo {
+    width: 20px;
+}
+.delete-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(41, 61, 140);
+    background-color: rgb(48, 72, 168);
+    font-family:'Times New Roman', Times, serif ;
+    cursor: pointer;
+}
+.todos {
+    margin-left: 22px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.todos .todo{
+    background-color: rgb(182, 206, 229);
+    width: 700px;
+    border: 2px solid rgb(41, 61, 140);
+    padding: 5px ;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif ;
 }
